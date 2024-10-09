@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Postura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Juego de postura</h1>
+    <h3>Seleccione la opcion correcta</h3>
+
+    <div id="game-container">
+        <!-- Niveles de postura -->
+        <div id="level-container">
+            <h2 id="level-title">Nivel 1</h2>
+            <div class="postures">
+                <img alt="Postura 1" class="posture" data-correct="false">
+                <img alt="Postura 2" class="posture" data-correct="true">
+                <img alt="Postura 3" class="posture" data-correct="false">
+            </div>
+            <p id="feedback" style="color: red;"></p> <!-- Feedback de postura incorrecta -->
+        </div>
+
+        <!-- Preguntas -->
+        <div id="quiz-container" style="display: none;">
+            <h2 id="question-title">Pregunta 1</h2>
+            <p id="question-text"></p>
+            <div id="options"></div>
+            <p id="timer">Tiempo restante: <span id="time-left">60</span>s</p>
+        </div>
+
+        <!-- Puntaje final -->
+        <div id="score-container" style="display: none;">
+            <h2>¡Juego Completo!</h2>
+            <p id="final-score"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
